@@ -25,37 +25,6 @@ public class MD5Util {
 
 	/**
 	 * 
-	 * @Description: 生成工具
-	 * @param args
-	 * @return: void
-	 */
-	public static void main(String[] args) {
-		try {
-			File md5File = new File("md5.txt");
-			if (md5File.exists()) {
-				md5File.delete();
-			}
-			md5File.createNewFile();
-
-			StringBuilder result = new StringBuilder();
-
-			for (String fileName : args) {
-				File file = new File(fileName);
-				if (file.exists()) {
-					result.append(fileName + ": ");
-					result.append(getMD5(file) + "\n");
-				}
-			}
-
-			FileUtil.writerFile(md5File.getAbsolutePath(), result.toString());
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * 
 	 * @Description: 读取文件内容，生成MD5
 	 * @param file
 	 * @return

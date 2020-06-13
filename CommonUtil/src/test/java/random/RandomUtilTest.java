@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 /**
  * @author ywx
  * @Date 2020年6月11日 上午12:04:47
- * @Description:TODO
+ * @Description:测试类
  */
 public class RandomUtilTest {
 

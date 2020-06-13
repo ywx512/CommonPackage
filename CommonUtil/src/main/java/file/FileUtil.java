@@ -217,7 +217,7 @@ public class FileUtil {
 	 * 
 	 * @author yuweixiong
 	 * @date 2020/06/10
-	 * @Description TODO
+	 * @Description 排序枚举类
 	 */
 	public static enum OrderType {
 		ASC("asc"), DESC("desc");

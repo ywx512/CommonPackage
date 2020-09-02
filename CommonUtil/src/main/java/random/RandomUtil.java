@@ -1,5 +1,7 @@
 package random;
 
+import java.util.UUID;
+
 import org.apache.commons.lang3.RandomStringUtils;
 
 /*
@@ -15,4 +17,8 @@ public class RandomUtil {
 	public static String ramdom32() {
 		return RandomStringUtils.randomAlphanumeric(32);
 	}
+	
+	public static void main(String[] args) {
+        System.out.println(UUID.randomUUID().toString());
+    }
 }

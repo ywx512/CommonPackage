@@ -22,4 +22,10 @@ public class FileUtilTest {
 			System.out.println("文件名： " + name);
 		}
 	}
+
+
+	@Test
+	void getFilePathAtProject() {
+		System.out.println(FileUtil.getFilePathAtProject("/src/test/data"));
+	}
 }
